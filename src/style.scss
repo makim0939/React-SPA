@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #222;
+  font-family: "Segoe UI", sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  margin: 16px 0;
+  ul {
+    list-style-type: none;
+    text-align: center;
+    li {
+      display: inline;
+      margin-left: 112px;
+      margin-right: 72px;
+      a {
+        text-decoration: none;
+        font-size: 24px;
+      }
+    }
+  }
+  hr {
+    margin: auto;
+    width: 120px;
+    border: solid 1px #f22;
+  }
+}
