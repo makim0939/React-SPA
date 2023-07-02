@@ -1,2 +1,2 @@
 # React-SPA
-Seamless page transitions on single-page sites.
+Aim for seamless page transitions on a single-page site.
