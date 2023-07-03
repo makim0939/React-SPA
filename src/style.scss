@@ -32,3 +32,27 @@ header {
     border: solid 1px #f22;
   }
 }
+.title {
+  text-align: center;
+  margin: 16px 0;
+}
+
+.wrapper {
+  h1 {
+    text-align: center;
+    margin: 16px 0;
+  }
+  display: block;
+  width: 540px;
+  margin: auto;
+
+  .main {
+    margin: 16px 0;
+    .container {
+      margin: 8px 0;
+      p {
+        padding-left: 8px;
+      }
+    }
+  }
+}
