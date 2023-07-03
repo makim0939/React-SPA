@@ -3,6 +3,11 @@ import { Outlet, Link } from "react-router-dom";
 function Header() {
   return (
     <div className="header">
+      <div className="slectMode">
+        <select name="" id="">
+          <option value="none">none</option>
+        </select>
+      </div>
       <ul>
         <li>
           <Link to={"home"}>HOME</Link>

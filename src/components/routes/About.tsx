@@ -2,13 +2,14 @@ import React, { useEffect, useRef } from "react";
 
 //import modules
 import { headerBarEnter } from "../../modules/transition/headerBar";
+import { fillTransition } from "../../modules/transition/fllTransition";
 
 function enterAnimation() {
   console.log("enter about");
-  headerBarEnter("about");
+  headerBarEnter("about", 0.3);
 }
 function leaveAnimation() {
-  console.log("leave");
+  console.log("leave about");
 }
 
 function About() {

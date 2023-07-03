@@ -1,3 +1,4 @@
+$theme: #f0f700;
 * {
   margin: 0;
   padding: 0;
@@ -9,10 +10,25 @@ html,
 body {
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  background-color: #fafafa;
 }
 
 header {
+  //position: fixed;
   margin: 16px 0;
+
+  select {
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    width: 64px;
+    height: 64px;
+    border: none;
+    outline: none;
+    background-color: $theme;
+  }
+
   ul {
     list-style-type: none;
     text-align: center;
@@ -29,7 +45,7 @@ header {
   hr {
     margin: auto;
     width: 120px;
-    border: solid 1px #f22;
+    border: solid 2px $theme;
   }
 }
 .title {
@@ -55,4 +71,14 @@ header {
       }
     }
   }
+}
+
+//
+#transFill {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  background-color: $theme;
 }

@@ -2,14 +2,15 @@ import React, { useEffect, useRef } from "react";
 
 //import modules
 import { headerBarEnter } from "../../modules/transition/headerBar";
+import { fillTransition } from "../../modules/transition/fllTransition";
 
 //このページに遷移した時のアニメーション
 function enterAnimation() {
   console.log("enter home");
-  headerBarEnter("home");
+  headerBarEnter("home", 0.3);
 }
 //別ページへとぶ直前のアニメーション
-function leaveAnimation() {
+async function leaveAnimation() {
   console.log("leave");
 }
 

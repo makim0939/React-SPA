@@ -22,6 +22,7 @@ function Root() {
       <div>
         <Outlet />
       </div>
+      <div id="transFill"></div>
     </>
   );
 }

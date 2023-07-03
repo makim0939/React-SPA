@@ -5,7 +5,7 @@ import { headerBarEnter } from "../../modules/transition/headerBar";
 
 function enterAnimation() {
   console.log("enter Contact");
-  headerBarEnter("contact");
+  headerBarEnter("contact", 0.3);
 }
 function leaveAnimation() {
   console.log("leave");
