@@ -1,25 +1,21 @@
-import React from "react";
-import { Outlet, Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Outlet, useNavigate } from "react-router-dom";
+
+//import components
+import Header from "../Header";
 
 function Root() {
+  const navigate = useNavigate();
+  useEffect(()=> {
+    //マウント時homeに遷移
+    navigate("home")
+  },[])
   return (
     <>
       <header>
-        <ul>
-          <li>
-            <Link to={"home"}>Home</Link>
-          </li>
-          <li>
-            <Link to={"about"}>ABOUT</Link>
-          </li>
-          <li>
-            <Link to={"contact"}>CONTACT</Link>
-          </li>
-        </ul>
-        <hr />
+        <Header />
       </header>
       <h1>REACT-SPA</h1>
-
       <div>
         <Outlet />
       </div>
